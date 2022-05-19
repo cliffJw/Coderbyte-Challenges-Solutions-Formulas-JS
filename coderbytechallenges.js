@@ -1389,5 +1389,16 @@ console.log(MathChallenge(12)) // 78
 
 
 
+// ******** String Challenge ********
 
+function StringChallenge(num) {
 
+    var hour = Math.floor(num / 60);
+    var min = num % 60;
+
+    return hour + ":" + min;
+
+}
+console.log(StringChallenge(126)) // 2:6
+console.log(StringChallenge(45)) // 0,45
+console.log(StringChallenge(63)) // 1:3
