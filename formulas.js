@@ -103,7 +103,6 @@ let newName = "Dean,Winchester"
 console.log(newName.split(",")); // (2) ['Dean', 'Winchester']
 
 
-
 // *****************************
 let line = ["a", "b", "c", "d", "e"]
 
@@ -120,6 +119,20 @@ console.log(otherName.charCodeAt(1)) // 97
 
 console.log(String.fromCharCode(67, 97, 115, 116, 105, 101, 108)) // Castiel
 console.log(String.fromCharCode(65, 66, 67, 68, 69, 70)) // ABCDEF
+
+
+
+// *****************************
+let alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+console.log(alphabet.indexOf("b")); // 1  => index numarası
+
+console.log(alphabet.indexOf("ğ")); // -1  => index numarasını bulamadı çünkü "ğ" alphabet içinde yok, o yüzden -1 dönüyor.
+
+console.log(alphabet.charAt((alphabet.indexOf("b")))) // b => burada ise index numarasını vererek değişkendeki harfe ulaştık
+
+console.log(alphabet.charAt((alphabet.indexOf("b")) + 2)) // d => burada ise index numarasına (+ 2) ekleyerek o index numarasına denk gelen harfe ulaştık
+
 
 
 
