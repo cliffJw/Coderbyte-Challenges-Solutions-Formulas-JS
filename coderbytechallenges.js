@@ -1315,3 +1315,59 @@ console.log(DistinctList([2, 2 ])) // 1
 console.log(DistinctList([5,5,5,5,5,5,5,7])) //  6
 
 
+
+
+
+
+// ******** Letter Capitalize ********
+
+// Method-1:
+function LetterCapitalize(str){
+
+    return str.split(" ").map(x => 
+        x[0].toUpperCase().concat(x.slice(1))
+        ).join(" ")
+    
+    }
+    console.log(LetterCapitalize("hello world")) // Hello World
+    console.log(LetterCapitalize("i ran there")) // I Ran There
+
+
+
+
+// Method-2:
+function LetterCapitalize(str){
+
+    return str.split(" ").map(x => 
+        x.charAt(0).toUpperCase() + x.slice(1)
+        ).join(" ")
+    
+    }
+    console.log(LetterCapitalize("hello world")) // Hello World
+    console.log(LetterCapitalize("i ran there")) // I Ran There
+
+
+
+
+
+// Method-3:
+function LetterCapitalize(str) {
+
+    let strSplit = str.split(" ")
+
+    for (let i = 0; i < strSplit.length; i++) {
+        strSplit[i] = strSplit[i].charAt(0).toUpperCase() + strSplit[i].slice(1)
+
+    }
+
+    return strSplit.join(" ")
+}
+console.log(LetterCapitalize("hello world")) // Hello World
+console.log(LetterCapitalize("i ran there")) // I Ran There
+
+
+
+
+
+
+
