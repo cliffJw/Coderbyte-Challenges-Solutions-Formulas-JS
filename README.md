@@ -73,15 +73,17 @@
 ><br>
 >Letter Capitalize
 ><br>
+>Math Challenge (2)
+><br>
 >
 ><br>
+>
+><br>
+
 
 <br>
 <hr>
 <br>
-
-
-
 
 ## First Factorial 
 <br>
@@ -874,6 +876,28 @@ Output: Hello World
 Input: "i ran there"
 Output: I Ran There
 
+
+```
+<br>
+<hr>
+<br>
+
+## Math Challenge (2)
+<br>
+
+Have the function MathChallenge(num) add up all the numbers from 1 to num. For example: if the input is 4 then your program should return 10 because 1 + 2 + 3 + 4 = 10. For the test cases, the parameter num will be any number from 1 to 1000.
+
+<br>
+
+Examples
+
+```
+
+Input: 12
+Output: 78
+
+Input: 140
+Output: 9870
 
 ```
 <br>

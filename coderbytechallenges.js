@@ -25,20 +25,18 @@ function FirstReverse(str) {
     }
     return backwardString;
 }
-//console.log(FirstReverse("coderbyte")); // etybredoc
+console.log(FirstReverse("coderbyte")); // etybredoc
 
 
 
 // Method - 2:
 function FirstReverse(str) {
-
     // code goes here  
     return str.split("").reverse().join("")
-
 }
 
-// keep this function call here 
-FirstReverse(readline());
+
+
 
 
 
@@ -460,20 +458,20 @@ console.log(SwapCase("Sup DUDE!!?")) // sUP dude!!?
 
 // ******** ThreeFive Multiples ********
 
-function ThreeFiveMultiples(num) { 
+function ThreeFiveMultiples(num) {
 
     // code goes here  
     let arr = []
-  
-    for(let i = 0; i < num; i++){
-      if(i % 5 === 0 || i % 3 === 0){
-        arr.push(i)
-      }
+
+    for (let i = 0; i < num; i++) {
+        if (i % 5 === 0 || i % 3 === 0) {
+            arr.push(i)
+        }
     }
-  
-  return arr.reduce((a,b) => a+b)
-  
-  }
+
+    return arr.reduce((a, b) => a + b)
+
+}
 console.log(ThreeFiveMultiples(6)); // 8
 console.log(ThreeFiveMultiples(1)); // 0
 
@@ -502,7 +500,7 @@ function ThreeFiveMultiples(num) {
         //   sum: 3
         //   sum: 8
     }
-    
+
     return sum;
 }
 console.log(ThreeFiveMultiples(6)); // 8
@@ -1277,14 +1275,14 @@ function DistinctList(arr) {
 }
 console.log(DistinctList([1, 2, 2, 2, 3])) // 2 
 console.log(DistinctList([0, -2, -2, 5, 5, 5])) // 3
-console.log(DistinctList([100,2,101,4])) // 0
+console.log(DistinctList([100, 2, 101, 4])) // 0
 console.log(DistinctList([1, 2, 3, 4])) // 0
 console.log(DistinctList([1, 1, 1, 2, 2, 3, 3, 3])) // 5
 console.log(DistinctList([1, 1, 1])) // 2
-console.log(DistinctList([2, 2 ])) // 1
+console.log(DistinctList([2, 2])) // 1
 
 // Başarısız - Fail :)
-console.log(DistinctList([5,5,5,5,5,5,5,7])) //  output: 5 ( but the expected answer was 6 )
+console.log(DistinctList([5, 5, 5, 5, 5, 5, 5, 7])) //  output: 5 ( but the expected answer was 6 )
 
 
 
@@ -1302,17 +1300,17 @@ function DistinctList(arr) {
         }
     }
 
-return res.length
+    return res.length
 
 }
 console.log(DistinctList([1, 2, 2, 2, 3])) // 2 
 console.log(DistinctList([0, -2, -2, 5, 5, 5])) // 3
-console.log(DistinctList([100,2,101,4])) // 0
+console.log(DistinctList([100, 2, 101, 4])) // 0
 console.log(DistinctList([1, 2, 3, 4])) // 0
 console.log(DistinctList([1, 1, 1, 2, 2, 3, 3, 3])) // 5
 console.log(DistinctList([1, 1, 1])) // 2
-console.log(DistinctList([2, 2 ])) // 1
-console.log(DistinctList([5,5,5,5,5,5,5,7])) //  6
+console.log(DistinctList([2, 2])) // 1
+console.log(DistinctList([5, 5, 5, 5, 5, 5, 5, 7])) //  6
 
 
 
@@ -1322,29 +1320,29 @@ console.log(DistinctList([5,5,5,5,5,5,5,7])) //  6
 // ******** Letter Capitalize ********
 
 // Method-1:
-function LetterCapitalize(str){
+function LetterCapitalize(str) {
 
-    return str.split(" ").map(x => 
+    return str.split(" ").map(x =>
         x[0].toUpperCase().concat(x.slice(1))
-        ).join(" ")
-    
-    }
-    console.log(LetterCapitalize("hello world")) // Hello World
-    console.log(LetterCapitalize("i ran there")) // I Ran There
+    ).join(" ")
+
+}
+console.log(LetterCapitalize("hello world")) // Hello World
+console.log(LetterCapitalize("i ran there")) // I Ran There
 
 
 
 
 // Method-2:
-function LetterCapitalize(str){
+function LetterCapitalize(str) {
 
-    return str.split(" ").map(x => 
+    return str.split(" ").map(x =>
         x.charAt(0).toUpperCase() + x.slice(1)
-        ).join(" ")
-    
-    }
-    console.log(LetterCapitalize("hello world")) // Hello World
-    console.log(LetterCapitalize("i ran there")) // I Ran There
+    ).join(" ")
+
+}
+console.log(LetterCapitalize("hello world")) // Hello World
+console.log(LetterCapitalize("i ran there")) // I Ran There
 
 
 
@@ -1364,6 +1362,28 @@ function LetterCapitalize(str) {
 }
 console.log(LetterCapitalize("hello world")) // Hello World
 console.log(LetterCapitalize("i ran there")) // I Ran There
+
+
+
+
+
+
+
+// ******** Math Challenge (2) ********
+
+function MathChallenge(num) {
+
+    let res = []
+
+    for (let i = 0; i <= num; i++) {
+        res.push(i)
+    }
+
+    return res.reduce((a, b) => a + b)
+
+}
+console.log(MathChallenge(12)) // 78
+
 
 
 
