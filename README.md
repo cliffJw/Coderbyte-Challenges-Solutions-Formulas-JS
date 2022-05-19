@@ -3,6 +3,86 @@
 
 <br>
 
+
+
+<hr>
+<br>
+
+
+>First Factorial
+><br>
+>First Reverse
+><br>
+>Find Intersection
+><br>
+>Longest Word
+><br>
+>Questions Marks
+><br>
+>Prime Time
+><br>
+>Consonant Count
+><br>
+>Check Nums
+><br>
+>Palindrome Two
+><br>
+>Ex Oh
+><br>
+>Consecutive
+><br>
+>Swap Case
+><br>
+>ThreeFive Multiples
+><br>
+>Power Set Count
+><br>
+>Even Pairs
+><br>
+>Simple Evens
+><br>
+>Happy Numbers
+><br>
+>Fibonacci Checker
+><br>
+>Number Reverse
+><br>
+>Nearest Smaller Values
+><br>
+>Largest Four
+><br>
+>Matrix Spiral
+><br>
+>Math Challenge
+><br>
+>Array Challenge
+><br>
+>Prime Mover
+><br>
+>Simple Adding
+><br>
+>Searching Challenge (or Letter Count)
+><br>
+>Front-end Challenge
+><br>
+>Letter Changes
+><br>
+>Two Sum
+><br>
+>
+><br>
+>
+><br>
+>
+><br>
+
+<br>
+<hr>
+<br>
+
+
+
+
 ## First Factorial 
 <br>
 Have the function FirstFactorial(num) take the num parameter being passed and return the factorial of it.
@@ -29,8 +109,8 @@ Output: 40320
 ```
 <br>
 <hr>
-
 <br>
+
 
 ## First Reverse 
 <br>
@@ -747,6 +827,29 @@ Output: 6,11 10,7 15,2
 
 Input: new int[] {7, 6, 4, 1, 7, -2, 3, 12}
 Output: 6,1 4,3
+
+
+```
+<br>
+<hr>
+<br>
+
+## Distinct List
+<br>
+
+Have the function DistinctList(arr) take the array of numbers stored in arr and determine the total number of duplicate entries. For example if the input is [1, 2, 2, 2, 3] then your program should output 2 because there are two duplicates of one of the elements.
+
+<br>
+
+Examples
+
+```
+
+Input: new int[] {0,-2,-2,5,5,5}
+Output: 3
+
+Input: new int[] {100,2,101,4}
+Output: 0
 
 
 ```

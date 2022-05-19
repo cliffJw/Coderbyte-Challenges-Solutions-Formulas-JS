@@ -1246,6 +1246,72 @@ console.log(TwoSum([4, 5, 2, 1])) // -1
 
 
 
+// ******** Distinct List ********
 
+// Method-1:
+function DistinctList(arr) {
+
+    let res = []
+
+    for (let i = 0; i < arr.length; i++) {
+        for (let x = i + 1; x < arr.length; x++) {
+            if (arr[i] == arr[x]) {
+                res.push(arr[i])
+                arr.splice(arr.indexOf(arr[i]), 1)
+            }
+        }
+    }
+
+
+    for (let i = 0; i < arr.length; i++) {
+        for (let x = i + 1; x < arr.length; x++) {
+            if (arr[i] == arr[x]) {
+                res.push(arr[i])
+                arr.splice(arr.indexOf(arr[i]), 1)
+            }
+        }
+    }
+
+    return res.length
+
+}
+console.log(DistinctList([1, 2, 2, 2, 3])) // 2 
+console.log(DistinctList([0, -2, -2, 5, 5, 5])) // 3
+console.log(DistinctList([100,2,101,4])) // 0
+console.log(DistinctList([1, 2, 3, 4])) // 0
+console.log(DistinctList([1, 1, 1, 2, 2, 3, 3, 3])) // 5
+console.log(DistinctList([1, 1, 1])) // 2
+console.log(DistinctList([2, 2 ])) // 1
+
+// Başarısız - Fail :)
+console.log(DistinctList([5,5,5,5,5,5,5,7])) //  output: 5 ( but the expected answer was 6 )
+
+
+
+// Method-2:
+function DistinctList(arr) {
+
+    let res = []
+
+    for (let i = 0; i < arr.length; i++) {
+        for (let x = i + 1; x < arr.length; x++) {
+            if (arr[i] == arr[x]) {
+                res.push(arr[x])
+                break;
+            }
+        }
+    }
+
+return res.length
+
+}
+console.log(DistinctList([1, 2, 2, 2, 3])) // 2 
+console.log(DistinctList([0, -2, -2, 5, 5, 5])) // 3
+console.log(DistinctList([100,2,101,4])) // 0
+console.log(DistinctList([1, 2, 3, 4])) // 0
+console.log(DistinctList([1, 1, 1, 2, 2, 3, 3, 3])) // 5
+console.log(DistinctList([1, 1, 1])) // 2
+console.log(DistinctList([2, 2 ])) // 1
+console.log(DistinctList([5,5,5,5,5,5,5,7])) //  6
 
 
