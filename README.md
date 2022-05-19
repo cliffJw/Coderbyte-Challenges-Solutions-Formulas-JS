@@ -75,7 +75,7 @@
 ><br>
 >Math Challenge (2)
 ><br>
->
+>String Challenge
 ><br>
 >
 ><br>
