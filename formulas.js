@@ -1,27 +1,4 @@
 
-
-
-.match(/d(\?\?\?)d/gi)  // 3 tane arka arkaya "?"
- 
-.match(/\d+/g) // sadece digitler
-
-.match(/\d+|([a-zA-Z])\w+/g) // büyük küçük harf ve digitler(rakamlar)
-
-let Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-let regexUpper = /[A-Z]/
-
-let Lower = "abcdefghijklmnopqrstuvwxyz"
-let regexLower = /[a-z]/
-
-let Vowel = "aeiouAEIOU"
-.match(/([aeiouAEIOU])/g) 
-
-let Consonant = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
-
-.replace(/\s/g, ""); // virgülden önceki tüm boşlukları boş bir dize ile değiştirerek kaldırıyoruz.
-
-
-
 // **************************************************************
 let numbers =  [1, 2, 3, 4]
 
@@ -134,6 +111,28 @@ console.log(alphabet.charAt((alphabet.indexOf("b")))) // b => burada ise index n
 console.log(alphabet.charAt((alphabet.indexOf("b")) + 2)) // d => burada ise index numarasına (+ 2) ekleyerek o index numarasına denk gelen harfe ulaştık
 
 
+
+// **************************************************************
+// regex
+
+.match(/d(\?\?\?)d/gi)  // 3 tane arka arkaya "?"
+ 
+.match(/\d+/g) // sadece digitler
+
+.match(/\d+|([a-zA-Z])\w+/g) // büyük küçük harf ve digitler(rakamlar)
+
+let Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+let regexUpper = /[A-Z]/
+
+let Lower = "abcdefghijklmnopqrstuvwxyz"
+let regexLower = /[a-z]/
+
+let Vowel = "aeiouAEIOU"
+.match(/([aeiouAEIOU])/g) 
+
+let Consonant = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
+
+.replace(/\s/g, ""); // virgülden önceki tüm boşlukları boş bir dize ile değiştirerek kaldırıyoruz.
 
 
 
