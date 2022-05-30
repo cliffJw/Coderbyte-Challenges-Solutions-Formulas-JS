@@ -1402,3 +1402,83 @@ function StringChallenge(num) {
 console.log(StringChallenge(126)) // 2:6
 console.log(StringChallenge(45)) // 0,45
 console.log(StringChallenge(63)) // 1:3
+
+
+
+
+// ******** Caesar Cipher ********
+
+
+function CaesarCipher(str, num) {
+
+    let alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    let result = []
+
+    for (let i = 0; i < str.length; i++) {
+        if (alphabet.indexOf(str[i]) !== -1) {
+            result.push(alphabet.charAt((alphabet.indexOf(str[i])) + num))
+        } else if (alphabet.indexOf(str[i]) == -1) {
+            result.push(str[i])
+        }
+    }
+    return result.join("");
+}
+console.log(CaesarCipher("Caesar Cipher23 %+$#", 2)) // Ecguct Ekrjgt23 %+$#
+console.log(CaesarCipher("Caesar Cipher", 2)) // Ecguct Ekrjgt2
+console.log(CaesarCipher("Hello", 4)) // Lipps
+console.log(CaesarCipher("abc", 0)) // abc
+
+// Wrong answers...
+console.log(CaesarCipher("coderBYTE", 2)) // eqfgtDAVG // wrong  =>  eqfgtDVG
+console.log(CaesarCipher("dogs", 8)) // lwoa  // wrong  =>  lwoA
+console.log(CaesarCipher("byte", 13)) // olgr // wrong  =>  oLGr
+
+
+
+
+
+
+
+// Method - 2 (😀 ...)
+function CaesarCipher(str, num) {
+
+    // burayı regex ile halledebilürük, bir ara bakacağım :D...
+    let alphabetB = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+    let alphabetL = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+    let result = []
+
+
+    for (let i = 0; i < str.length; i++) {
+        if (alphabetB.indexOf(str[i]) !== -1) {
+            result.push(alphabetB.charAt((alphabetB.indexOf(str[i])) + num))
+        } else if (alphabetL.indexOf(str[i]) !== -1) {
+            result.push(alphabetL.charAt((alphabetL.indexOf(str[i])) + num))
+        } else if (alphabetB.indexOf(str[i]) == -1 || alphabetL.indexOf(str[i]) == -1) {
+            result.push(str[i])
+        }
+    }
+
+    return result.join("");
+}
+console.log(CaesarCipher("Caesar Cipher23 %+$#", 2)) // Ecguct Ekrjgt23 %+$#
+console.log(CaesarCipher("Caesar Cipher", 2)) // Ecguct Ekrjgt2
+console.log(CaesarCipher("Hello", 4)) // Lipps
+console.log(CaesarCipher("abc", 0)) // abc
+
+console.log(CaesarCipher("coderBYTE", 2)) // eqfgtDAVG 
+console.log(CaesarCipher("dogs", 8)) // lwoa  
+console.log(CaesarCipher("byte", 13)) // olgr 
+
+
+
+
+
+
+
+
+
+
+
+
+
