@@ -1516,6 +1516,59 @@ console.log(MathChallenge(67, 67)) // -1
 
 
 
+// ******** String Challenge (2) ********
+
+// METHOD - 1:
+function StringChallenge(str) {
+
+    let result = []
+
+    let arr = str.toLowerCase().split("").join("").match(/(.)\1*/g)
+    // console.log("arr:",arr); // arr: (3) ['www', 'bbb', 'w']
+
+    if (arr !== null) {
+        arr.map(e => {
+            result.push(e.length + e[0])
+        });
+    }
+
+    return result.join("")
+}
+console.log(StringChallenge("wwwbbbw")); // 3w3b1w
+console.log(StringChallenge("wwwggopp")); // 3w2g1o2p
+console.log(StringChallenge("aabbcde")); // 2a2b1c1d1e
+
+
+
+
+// METHOD - 2:
+function StringChallenge(str) {
+
+    let result = []
+
+    let arr = str.toLowerCase().split("").join("").match(/(.)\1*/g)
+
+    for (let i = 0; i < arr.length; i++) {
+        result.push(arr[i].length + arr[i][0])
+    }
+
+    return result.join("")
+}
+console.log(StringChallenge("wwwbbbw")); // 3w3b1w
+console.log(StringChallenge("wwwggopp")); // 3w2g1o2p
+console.log(StringChallenge("aabbcde")); // 2a2b1c1d1e
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
