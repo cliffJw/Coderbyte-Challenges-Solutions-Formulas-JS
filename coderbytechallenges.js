@@ -1587,6 +1587,29 @@ console.log(MeanderingArray([5, 2, 7, 8, -2, 25, 25])); // [25, -2, 25, 2, 8, 5,
 
 
 
+// ********  Generator Primes  ********
+function getPrimes(n) {
+
+    let primeNumbers = []
+
+    for (let i = 1; i < n; i++) {
+        let mark = 0;
+
+        for (let x = 2; x < i; x++) {
+            if (i % x == 0) {
+                mark = 1;
+                break;
+            }
+        }
 
 
+        if (i > 1 && mark == 0) {
+            primeNumbers.push(i)
+        }
+    }
+
+    return primeNumbers.join(" ")
+
+};
+console.log(getPrimes(10)) // 2 3 5 7
 

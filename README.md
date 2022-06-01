@@ -83,10 +83,13 @@
 ><br>
 >String Challenge (2)
 ><br>
->
+>Meandering Array
+><br>
+>Generator Primes 
 ><br>
 >
 ><br>
+
 
 
 <br>
@@ -1035,7 +1038,35 @@ Output: [3, -5, 2, -1, 1]
 <br>
 
 
+## Generator Primes 
+<br>
 
+Give an integer n, use javascript generators to generate all prime numbers less than n.
+
+<br>
+
+Function Description: <br>
+Complete the getPrimes function in the editor below.
+
+<br>
+
+getPrimes has the following parameters(s): <br>
+n: an integer that represents the upper limit of prime numbers to be generated.
+
+<br>
+
+Examples
+
+```
+
+Input: 10
+
+Output: 2 3 5 7
+
+```
+<br>
+<hr>
+<br>
 
 
 
