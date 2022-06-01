@@ -1481,11 +1481,6 @@ console.log(CaesarCipher("byte", 13)) // olgr
 
 
 
-
-
-
-
-
 // ******** Math Challenge (3) ********
 
 function MathChallenge(num1, num2) {
@@ -1506,10 +1501,6 @@ function MathChallenge(num1, num2) {
 console.log(MathChallenge(3, 122)) // true
 console.log(MathChallenge(122, 3)) // false
 console.log(MathChallenge(67, 67)) // -1
-
-
-
-
 
 
 
@@ -1562,9 +1553,34 @@ console.log(StringChallenge("aabbcde")); // 2a2b1c1d1e
 
 
 
+// ******** Meandering Array ********
 
+function MeanderingArray(arr) {
 
+    arr.sort((a, b) => a - b);
+    // console.log("arr",arr); // arr (5) [-5, -1, 1, 2, 3]
 
+    let startIndex = 0, endIndex = arr.length - 1, x = true;
+    const result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (x) {
+            // result[i] = arr[endIndex--];
+            result.push(arr[endIndex--])
+        } else {
+            // result[i] = arr[startIndex++];
+            result.push(arr[startIndex++])
+        }
+
+        x = !x;
+    }
+
+    return result;
+
+}
+console.log(MeanderingArray([-1, 1, 2, 3, -5])); // [3, -5, 2, -1, 1]
+console.log(MeanderingArray([1, 2, 3, 4, 5])); // [5, 1, 4, 2, 3]
+console.log(MeanderingArray([5, 2, 7, 8, -2, 25, 25])); // [25, -2, 25, 2, 8, 5, 7]
 
 
 

@@ -1009,3 +1009,34 @@ Output: 3w3b1w
 <br>
 <hr>
 <br>
+
+
+
+## Meandering Array
+<br>
+
+An array of integers is defined as being in meandering order when the first two elements are the respective largest and smallest elements in the array and the subsequent elements alternate between its next largest and next smallest elements. In other words, the elements are in order of [first_largest, first_smallest, second_largest, second_smallest, ...].
+
+
+
+<br>
+
+Examples
+
+```
+
+Input: [-1, 1, 2, 3, -5]
+Output: [3, -5, 2, -1, 1]
+
+
+```
+<br>
+<hr>
+<br>
+
+
+
+
+
+
+
