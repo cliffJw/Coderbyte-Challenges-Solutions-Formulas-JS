@@ -1389,6 +1389,9 @@ console.log(MathChallenge(12)) // 78
 
 
 
+
+
+
 // ******** String Challenge ********
 
 function StringChallenge(num) {
@@ -1402,6 +1405,10 @@ function StringChallenge(num) {
 console.log(StringChallenge(126)) // 2:6
 console.log(StringChallenge(45)) // 0,45
 console.log(StringChallenge(63)) // 1:3
+
+
+
+
 
 
 
@@ -1469,6 +1476,38 @@ console.log(CaesarCipher("abc", 0)) // abc
 console.log(CaesarCipher("coderBYTE", 2)) // eqfgtDAVG 
 console.log(CaesarCipher("dogs", 8)) // lwoa  
 console.log(CaesarCipher("byte", 13)) // olgr 
+
+
+
+
+
+
+
+
+
+
+// ******** Math Challenge (3) ********
+
+function MathChallenge(num1, num2) {
+
+    // METHOD-1:
+
+    // if ( num1 < num2){
+    //     return true;
+    // } else if (num1 > num2){
+    //     return false;
+    // } else return -1;
+
+
+    // METHOD-2:
+    return num1 > num2 ? false : num2 > num1 ? true : -1;
+
+}
+console.log(MathChallenge(3, 122)) // true
+console.log(MathChallenge(122, 3)) // false
+console.log(MathChallenge(67, 67)) // -1
+
+
 
 
 
