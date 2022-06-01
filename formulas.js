@@ -112,6 +112,29 @@ console.log(alphabet.charAt((alphabet.indexOf("b")) + 2)) // d => burada ise ind
 
 
 
+
+
+// *****************************
+let str = "wwwbbbw"
+
+var arr = str.toLowerCase().split("").sort().join("").match(/(.)\1+/g)
+console.log("arr:",arr); //  (2) ['bbb', 'wwww']
+
+
+var arr2 = str.toLowerCase().split("").join("").match(/(.)\1*/g)
+console.log("arr2:",arr2); //  (3) ['www', 'bbb', 'w']
+
+// NOT: match(/(.)\1+/g) bölümündeki +'yı "*" ile değiştirmemizin sebebi 
+// "*": "?" ile "+"nın birleşimidir.
+// Opsiyonel olarak bunu kontrol et ama bunun devamı varsa onları da bir grup olarak bana getir.
+
+
+
+
+
+
+
+
 // **************************************************************
 // regex
 
@@ -140,8 +163,7 @@ let Consonant = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
 
 
 
-// **********************************************************
-
+// ********************* EXAMPLES *********************
 
 //EXAMPLE-1: İki dizeyi karşılaştırıp, ortakları yeni bir dize de birleştirelim:
 let no1 = [1, 2, 3, 4, 5]
